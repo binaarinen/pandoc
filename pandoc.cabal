@@ -90,6 +90,7 @@ data-files:
                  data/templates/default.epub3
                  data/templates/article.jats_publishing
                  data/templates/affiliations.jats
+                 data/templates/default.markua
                  -- translations
                  data/translations/*.yaml
                  -- source files for reference.docx
