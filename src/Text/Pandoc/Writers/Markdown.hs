@@ -97,7 +97,7 @@ writeMarkua opts document =
                   enableExtension Ext_superscript $
                   enableExtension Ext_definition_lists $
                   enableExtension Ext_smart $
-                  enableExtension Ext_footnotes $
+                  enableExtension Ext_footnotes
                     mempty }
 
 
