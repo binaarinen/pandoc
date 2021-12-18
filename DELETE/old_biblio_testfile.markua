@@ -1,0 +1,413 @@
+* ONE first
+* ONE second
+    * TWO first
+    * TWO second
+    * TWO third
+        * THREE first
+        * THREE first
+            * FOUR first
+    * TWO fourth
+    * TWO fifth
+* ONE third
+
+asdasdf asdasdf
+
+Here is a simple footnote[^1]. With some additional text after it.
+
+Here is a simple footnote with number3 [^2]. With some additional text
+after it.
+
+WWWWWWWWWWWWWWWWWWWWWWWWWWW
+
+Here’s one of the kinematic equations
+`d = v_i t + \frac{1}{2} a t^2`{format: latex} inside a sentence.
+link [bar
+
+```
+\left|\sum_{i=1}^n a_ib_i\right|
+\le
+\left(\sum_{i=1}^n a_i^2\right)^{1/2}
+\left(\sum_{i=1}^n b_i^2\right)^{1/2}
+```
+
+BBBBBBBBBBBBBB
+
+{format: latex}
+```
+ \left|\sum_{i=1}^n a_ib_i\right| \le \left(\sum_{i=1}^n a_i^2\right)^{1/2} \left(\sum_{i=1}^n b_i^2\right)^{1/2} 
+```
+
+BBBBBBBBBBBBBB
+
+SMALL CAPS
+
+IIIIIIIIIIIIII
+
+inlineMath stuff ``a^2+b^2=c^2``$.
+
+IIIIIIIIIIIIIII
+
+AAAAAAAAAAAAAAAAAAA
+
+AAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAA
+bbbbbb
+AAAAAAAAAAAAAAAAAAAAAAAA This `span has an id`{id: hello}, so hooray!
+
+[Is this a span?]
+
+ok but this is one [maybe]
+
+CCCCCCCCCCCCCCCCCCCCC`no span`{id: asfd}CCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCC `yes span`{id: af} CCCCCCCCCCCCCCCCCCCC
+
+FFFFFFFFFFF CCCCCCCCCCCCCCCCCCCCC[no span] CCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCC [yes span] CCCCCCCCCCCCCCCCCCCC
+
+{class: math}
+```
+a^2+b^2=c^2
+```
+
+{alt: "img"}
+![](url)
+
+para
+
+adsf
+{alt: "Hello World in Ruby", title: "FristTitle"}
+![](hello.rb,rb)
+asdf
+
+adsf
+{alt: "Hello World in Ruby"}
+![](hello.rb,rb)
+asdf
+
+[
+{alt: "A Piece of Cake", title: "titleeee1"}
+![](cake.jpg)
+](https://unsplash.com/photos/I48gnI1Qs5o)
+[Another Cakeeeeeee](url)
+
+{class: svg}
+```
+<svg width="20" height="20">
+  <circle cx="10" cy="10" r="9" fill="blue"/>
+</svg>
+```
+
+{id: header1}
+# header1
+
+{class: optional_format}
+```
+inline resource content (default format is `text`)
+```
+
+{id: header2}
+## header2
+
+{class: $}
+```
+\left|\sum_{i=1}^n a_ib_i\right|
+\le
+\left(\sum_{i=1}^n a_i^2\right)^{1/2}
+\lef
+```
+
+{id: header3}
+### header3
+
+{id: foo, class: class, class: class, key: value, key: value7}
+#### header4
+
+{id: boo, class: class, class: class3, key: value, key: value7}
+##### header5
+
+{id: header6}
+###### header6
+
+{id: chapter1}
+# Chapter 1
+
+{id: chapterid-chapter-two-class-cl1-two}
+# Chapter{id: chapter-two, class: cl1} Two
+
+{id: nr, class: false} # chapter1111
+
+* * *
+
+this is a parapgrah
+
+* a *
+
+1) My first example will be numbered (1).
+2) My second example will be numbered (2).
+
+1. one
+2. two
+3. three
+
+3) This is a good example.
+
+As (3) illustrates, …
+
+4. one1111111111111
+5. two2222222222222
+6. three
+
+1) one111111111111
+2) two222222222222
+3) three
+
+* first list item
+* second list item
+* third list item
+
+2. numbered item 1
+3. numbered item 2
+    1. hello
+    2. hello
+        7. hello
+        8. hello
+            * todo
+            * todo
+4. nr4
+
+2) nr2
+3) nr3
+    * nested
+    * nested
+4) nr4
+    a. nested
+    b. nested
+        i) nested
+        ii) nested
+5) nr5
+
+2) item2
+3) item3
+4) item4
+
+ii. numbered item 1
+iii. numbered item 2
+iv. nr4
+
+II. numbered item 1
+III. numbered item 2
+IV. nr4
+
+b. numbered item 1
+c. numbered item 2
+d. nr4
+
+A) numbered item 1
+B) numbered item 2
+C) nr4
+
+1. first
+2. second
+3. third
+4. forth
+
+asdfasdf DEFINTIONLISTS
+
+term 1
+: definition 1a
+: definition 1b
+
+term 2
+: definition 2
+
+Here’s a paragraph before the definition list.
+
+one
+: This is the first definition of one. It’s one paragraph.
+: This is the second definition of one. It’s two paragraphs.
+
+This is a second paragraph in the second definition of one.
+
+two
+: The second definition list item is simple.
+
+**bold text** *recursive item* *underlined text*
+
+**bold extra text** **also bold**
+
+^^sc^^
+
+"double quoted **bold extra text** text" 'single quoted text'
+
+Hello World in Ruby is a simple
+`puts "hello world"`{id: foo, class: class1, class: class2, key: key1, key: key2}
+statement.
+
+`puts "hello world"`{id: foo, class: class1, class: class2, key: key1, key: key2}
+
+`puts "hello world"` {#foo .class1 .class2 key=key1 key=key2}
+
+next is a code block
+
+{: #someid .someclass somekey='some value' }
+
+```
+puts "hello"
+```
+
+next is a code block with attr
+
+{: #someid .someclass somekey='some value' }
+
+{class: rubydescription}
+```
+puts "hello"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+```
+
+* * *
+
+{id: foo, class: class1, class: class2, key: key1, key: key2, alt: "hello"}
+```
+puts "hello"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA  
+
+asdfasdf
+```
+
+{class: warning} next is some ressource
+
+{class: information} B> This is an information blurb.
+
+{blurb, class: tip} This is a tip blurb. {/blurb}
+
+{: #someid .someclass somekey='some value' }
+
+This is a paragraph. { #an_id .a_class }
+
+{format: ruby} adsf
+{alt: "Hello World in Ruby", title: "FristTitle"}
+![](hello.rb,rb)
+asdf
+
+This is the first paragraph of a blockquote.
+
+> This is a blockquote.
+>
+> It is outside the paragraphs.
+
+This is the last paragraph of a blockquote.
+
+second paragraph. > This is a blockquote > > It is inside the second
+paragraph. also second paragraph.
+
+{id: title1}
+## title1
+
+[Albert Einstein][1]
+
+a simple `puts "hello world"`{format: latex} statement ## title2
+
+{id: title5}
+## title5
+
+{id: title6}
+## title6
+
+{{jats}}<ref>{{/jats}}
+
+{id: title7-.class1-.class2}
+## title7 {.class1 , .class2}
+
+{alt: "img", external: 1}
+![](url)
+.
+
+{id: title8-.class1-.class2-id-quiz2}
+## title8 {.class1 .class2 id: quiz2}
+
+{id: title8-.class1-.class2-id-quiz2-1}
+## title8 {.class1 , .class2, id: quiz2}
+
+{id: title8-.class1-.class2-id-quiz2-2}
+## title8 {.class1 ; .class2; id: quiz2}
+
+{class: warning} some paragraph
+
+{id: title9, class: style-me, class: hello}
+## title9
+
+{class: warning}
+some paragraph
+
+{id: title10}
+## title10
+
+11111111111111111111111111111111111111111111
+
+Blah blah (**doe99?**; **smith2000?**; **smith2004?**).
+
+(**smith04?**) says blah.
+
+Blah blah (see **doe99?** and *passim*; **smith04?**).
+
+Blah blah (Doe 1999, Smith 2000, 2004)
+
+Smith says blah (**smith04444444?**) AAA AAA
+
+(**smith04?**) says blah.
+
+(asdf **smith?**, with a suffix)
+
+(Doe 2006 and nowhere else)
+
+(**smith?** with suffix here)
+
+With some markup (*see* Doe 2005, 32).
+
+(**smith?**, 99 years later)
+
+(**smith?**, 99 years later)
+
+Respect technology- and platform-specific design guidelines, for
+instance those in the "RESTful Web Services Cookbook" (Allamaraju
+(2010)).
+
+22222222222222222222222222222222222222222222
+
+Blah blah (**doe99?**; **smith2000?**; **smith2004?**).
+
+(**smith04?**) says blah.
+
+Blah blah (see **doe99?** and *passim*; **smith04?**).
+
+Blah blah (Doe 1999, Smith 2000, 2004)
+
+Smith says blah (**smith04444444?**) AAA AAA
+
+(**smith04?**) says blah.
+
+(asdf **smith?**, with a suffix)
+
+(Doe 2006 and nowhere else)
+
+(**smith?** with suffix here)
+
+With some markup (*see* Doe 2005, 32).
+
+(**smith?**, 99 years later)
+
+Respect technology- and platform-specific design guidelines, for
+instance those in the "RESTful Web Services Cookbook" (Allamaraju
+(2010)).
+
+Blah blah (Doe 1999, Smith 2000, 2004)
+
+Allamaraju, Subbu. 2010. *`RESTful Web Services Cookbook`*. Sebastopol:
+O’Reilly Media, Inc.
+
+Doe, John. 2005. *First Book*. Cambridge: Cambridge University Press.
+
+———. 2006. `“Article.”` *Journal of Generic Studies* 6: 33–34.
+
+[^1]: My reference. WWWWWWWWWWWWWWWWWWWWWWWWWWWW
+    WWWWWWWWWWWWWWWWWWWWWWWWWWWW
+
+[^2]: This is footnote nr3 explanatino
