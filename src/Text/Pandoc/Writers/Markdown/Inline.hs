@@ -162,11 +162,11 @@ attrsToMarkua attributes
 
 -- | Add a (key, value) pair to Pandoc attr type
 addKeyValueToAttr :: Attr -> (Text,Text) -> Attr
-addKeyValueToAttr (ident,classes,keyvalues) (key,value) 
+addKeyValueToAttr (ident,classes,kvs) (key,value) 
     | not (T.null key) && not (T.null value) = (ident,
                                                 classes,
-                                                (key,value): keyvalues)
-    | otherwise = (ident,classes,keyvalues)
+                                                (key,value): kvs)
+    | otherwise = (ident,classes,kvs)
 
 linkAttributes :: WriterOptions -> Attr -> Doc Text
 linkAttributes opts attr =
