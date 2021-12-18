@@ -45,8 +45,7 @@
 
 9) Inline 185-500
  - use case statement with ` _ | variant == Markua -> return $ "`" etc.
- - TODO
+ - done
 
-10) Inline 502-523
- - same as on InlineMath
- - TODO
+10) Inline 502-52 - same as on InlineMath
+ - done
