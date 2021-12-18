@@ -2,6 +2,8 @@
 
 1) To disallow the user to set options:
  - set writerExtensions to mempty before using it
+    - extensions werden nicht gebraucht. 
+    - waere gut wenn --citation und --bibliography funktionieren wuerden
 
 2) write tests for blurb and aside
 
@@ -17,9 +19,10 @@
  - make one line again
 
 7) Why are some attribues treated specially (Inline 152ff)
+    - We do in order to add the quotes around it
 
 8) use `indent instead of attrlistId
- - Inline 165-170
+ - Inline 165-170    -> umbenennen
 
 9) Inline 185-500
  - use case statement with ` _ | variant == Markua -> return $ "`" etc.
