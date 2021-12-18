@@ -13,7 +13,7 @@
 4) check if blurb is an element of `classes' instead of only that value
  - same for aside
 
-5) if divs dont have a special content, just return the content
+5) samuel -- if divs dont have a special content, just return the content
 
 6) Markdown.hs 648
  - make one line again
@@ -22,7 +22,7 @@
     - We do in order to add the quotes around it
 
 8) use `indent instead of attrlistId
- - Inline 165-170    -> umbenennen
+ - done: Inline 165-170    -> umbenennen
 
 9) Inline 185-500
  - use case statement with ` _ | variant == Markua -> return $ "`" etc.
