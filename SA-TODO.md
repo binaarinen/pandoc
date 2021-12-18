@@ -7,8 +7,23 @@
 
 2) write tests for blurb and aside
 
-3) samuel: revisit `escAttr = T.replace "\"" "\\\""`
+3) Tried: revisit `escAttr = T.replace "\"" "\\\""`
  - it's supposed to to the same as the 3 lines 150-152 in the Inline.hs file
+   tried:     -- escAttr          = mconcat . map escAttrChar . T.unpack
+              -- escAttrChar '"'  = literal "\""
+              -- escAttrChar c    = literal $ T.singleton c
+              escAttr = T.replace "\"" "\\\""
+
+              and
+
+              escAttr          = mconcat . map escAttrChar . T.unpack
+              -- escAttrChar '"'  = literal "\""
+              -- escAttrChar c    = literal $ T.singleton c
+              escAttr = T.replace "\"" "\\\""
+
+              => both results in compile error because of mismatched types
+              => keine Ahnung, könnte man sicher hinbiegen, läuft ja momentan
+
 
 4) done and tested: check if blurb is an element of `classes' instead of only that value
  - done and tested: same for aside
