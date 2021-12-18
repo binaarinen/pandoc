@@ -354,8 +354,8 @@ blockToMarkdown' opts (Div attrs ils) = do
      case () of
          _ | variant == Markua -> 
                    case () of
-                        () | classes' == ["blurb"] -> prefixed "B> " contents <> blankline
-                           | classes' == ["aside"] -> prefixed "A> " contents <> blankline
+                        () | "blurb" `elem` classes' -> prefixed "B> " contents <> blankline
+                           | "aside" `elem` classes' -> prefixed "A> " contents <> blankline
                            -- | necessary to enable option to create a bibliography
                            | (take 3 (T.unpack id')) == "ref" -> contents <> blankline
                            | otherwise -> contents <> blankline

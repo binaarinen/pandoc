@@ -16,6 +16,8 @@ asdasdf
     asdf
     asdf
 </div>
+<div class="aside hello">should be in aside</div>
+<div class="blurb hello">should be in blurb</div>
 
 Here is a simple footnote[^1]. With some additional text after it.
 

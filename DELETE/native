@@ -22,6 +22,30 @@
 , Plain [ Str "asdasdf" , SoftBreak , Str "asdasdf" ]
 , Div
     ( "" , [] , [] ) [ CodeBlock ( "" , [] , [] ) "asdf\nasdf" ]
+, Div
+    ( "" , [ "aside" , "hello" ] , [] )
+    [ Plain
+        [ Str "should"
+        , Space
+        , Str "be"
+        , Space
+        , Str "in"
+        , Space
+        , Str "aside"
+        ]
+    ]
+, Div
+    ( "" , [ "blurb" , "hello" ] , [] )
+    [ Plain
+        [ Str "should"
+        , Space
+        , Str "be"
+        , Space
+        , Str "in"
+        , Space
+        , Str "blurb"
+        ]
+    ]
 , Para
     [ Str "Here"
     , Space
