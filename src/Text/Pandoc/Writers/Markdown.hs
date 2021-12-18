@@ -645,8 +645,7 @@ blockToMarkdown' opts (OrderedList (start,sty,delim) items) = do
                                    else m) markers
   contents <- inList $
               zipWithM (orderedListItemToMarkdown opts) markers' items
-  return $ (if isTightList items then vcat else vsep) 
-                contents <> blankline
+  return $ (if isTightList items then vcat else vsep) contents <> blankline
 blockToMarkdown' opts (DefinitionList items) = do
   contents <- inList $ mapM (definitionListItemToMarkdown opts) items
   return $ mconcat contents <> blankline
