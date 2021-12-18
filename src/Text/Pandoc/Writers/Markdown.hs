@@ -98,7 +98,7 @@ writeMarkua opts document =
                   enableExtension Ext_definition_lists $
                   enableExtension Ext_smart $
                   enableExtension Ext_footnotes $
-                    writerExtensions opts }
+                    mempty }
 
 
 pandocTitleBlock :: Doc Text -> [Doc Text] -> Doc Text -> Doc Text
