@@ -10,10 +10,10 @@
 3) revisit `escAttr = T.replace "\"" "\\\""`
  - it's supposed to to the same as the 3 lines 150-152 in the Inline.hs file
 
-4) check if blurb is an element of `classes' instead of only that value
+4) samuel: check if blurb is an element of `classes' instead of only that value
  - same for aside
 
-5) samuel -- if divs dont have a special content, just return the content
+5) done: if divs dont have a special content, just return the content
 
 6) Markdown.hs 648
  - make one line again

@@ -358,7 +358,7 @@ blockToMarkdown' opts (Div attrs ils) = do
                            | classes' == ["aside"] -> prefixed "A> " contents <> blankline
                            -- | necessary to enable option to create a bibliography
                            | (take 3 (T.unpack id')) == "ref" -> contents <> blankline
-                           | otherwise -> mempty
+                           | otherwise -> contents <> blankline
            | isEnabled Ext_fenced_divs opts &&
              attrs /= nullAttr ->
                 let attrsToMd = if variant == Commonmark
