@@ -482,10 +482,9 @@ inlineToMarkdown opts (Str str) = do
   return $ literal str'
 inlineToMarkdown opts (Math InlineMath str) = do
   variant <- asks envVariant
-  if variant == Markua
-      then return $ "`" <> literal str <> "`" <> "$"
-      else
-        case writerHTMLMathMethod opts of
+  case () of
+    _ | variant == Markua -> return $ "`" <> literal str <> "`" <> "$"
+      | otherwise -> case writerHTMLMathMethod opts of
           WebTeX url -> inlineToMarkdown opts
                           (Image nullAttr [Str str] (url <> urlEncode str, str))
           _ | isEnabled Ext_tex_math_dollars opts ->
@@ -501,14 +500,13 @@ inlineToMarkdown opts (Math InlineMath str) = do
      
 inlineToMarkdown opts (Math DisplayMath str) = do
   variant <- asks envVariant
-  if variant == Markua
-      then do
+  case () of
+    _ | variant == Markua -> do
         let attributes = attrsToMarkua (addKeyValueToAttr ("",[],[]) 
                                                         ("format", "latex"))
         return $ blankline <> attributes <> cr <> literal "```" <> cr 
             <> literal str <> cr <> literal "```" <> blankline
-      else
-        case writerHTMLMathMethod opts of
+      | otherwise -> case writerHTMLMathMethod opts of
           WebTeX url -> (\x -> blankline <> x <> blankline) `fmap`
                  inlineToMarkdown opts (Image nullAttr [Str str]
                         (url <> urlEncode str, str))
